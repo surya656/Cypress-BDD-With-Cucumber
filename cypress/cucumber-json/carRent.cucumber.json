@@ -1,0 +1,587 @@
+[
+  {
+    "description": "    Rent Car in with Country/City as per Pickup and Drop date",
+    "keyword": "Feature",
+    "name": "End To End Rent Car Validation",
+    "line": 1,
+    "id": "end-to-end-rent-car-validation",
+    "tags": [],
+    "uri": "carRent.feature",
+    "elements": [
+      {
+        "id": "end-to-end-rent-car-validation;search-a-car-availabe-for-todays-date-with-valid-country,city",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Search a car availabe for todays date with Valid Country,City",
+        "tags": [
+          {
+            "name": "@SearchCarWithValidDate",
+            "line": 8
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I navigate to Car Rent Page",
+            "result": {
+              "status": "passed",
+              "duration": 823000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Country",
+                      "City"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Poland",
+                      "Cracow"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I select Country with Valid City",
+            "result": {
+              "status": "passed",
+              "duration": 366000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "Enter Valid Todays Date for Pickup and Drop-off",
+            "result": {
+              "status": "passed",
+              "duration": 585000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "Click on Search button",
+            "result": {
+              "status": "passed",
+              "duration": 891000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "Validate able to see List of Cars",
+            "result": {
+              "status": "passed",
+              "duration": 57000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "end-to-end-rent-car-validation;rent-a-car-available-for-future-days-for-respective-country-and-city",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Rent a Car available for future days for respective Country and City",
+        "tags": [
+          {
+            "name": "@RentCarWithValidDate",
+            "line": 17
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I navigate to Car Rent Page",
+            "result": {
+              "status": "passed",
+              "duration": 759000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Country",
+                      "City"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "France",
+                      "Paris"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 19,
+            "name": "I select Country with Valid City",
+            "result": {
+              "status": "passed",
+              "duration": 343000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Days",
+                      "5"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 22,
+            "name": "Enter Valid Future Date for Pickup and Drop-off",
+            "result": {
+              "status": "passed",
+              "duration": 601000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "Click on Search button",
+            "result": {
+              "status": "passed",
+              "duration": 941000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "Validate able to see List of Cars",
+            "result": {
+              "status": "passed",
+              "duration": 60000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "Rent First Car Availabe",
+            "result": {
+              "status": "passed",
+              "duration": 5768000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Country",
+                      "City"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "France",
+                      "Paris"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 27,
+            "name": "Validate Car Details with Valid Dates",
+            "result": {
+              "status": "passed",
+              "duration": 151000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "Click On Rent button",
+            "result": {
+              "status": "passed",
+              "duration": 764000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Name",
+                      "Adam"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "LastName",
+                      "Smith"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Card Number",
+                      "1234567"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Email Id",
+                      "adam@gmail.com"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 31,
+            "name": "Enter The Personal Details to Rent a Car",
+            "result": {
+              "status": "passed",
+              "duration": 1415000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "Click on Rent button to Confirm",
+            "result": {
+              "status": "passed",
+              "duration": 865000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "end-to-end-rent-car-validation;search-a-car-with-particular-model-for-respective-country,city-and-date",
+        "keyword": "Scenario",
+        "line": 39,
+        "name": "Search a Car with particular Model for respective Country,City and Date",
+        "tags": [
+          {
+            "name": "@SearchCarForModel",
+            "line": 38
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I navigate to Car Rent Page",
+            "result": {
+              "status": "passed",
+              "duration": 909000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Country",
+                      "City"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Germainy",
+                      "Berlin"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 40,
+            "name": "I select Country with Valid City",
+            "result": {
+              "status": "passed",
+              "duration": 342000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Model",
+                      "Suzuki Swift"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 43,
+            "name": "I Enter Car Model",
+            "result": {
+              "status": "passed",
+              "duration": 335000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 45,
+            "name": "Enter Valid Todays Date for Pickup and Drop-off",
+            "result": {
+              "status": "passed",
+              "duration": 664000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 46,
+            "name": "Click on Search button",
+            "result": {
+              "status": "passed",
+              "duration": 861000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Model",
+                      "Suzuki Swift"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 47,
+            "name": "Validate able to see List of Cars For particular Model",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError\n    + expected - actual\n\n    -'Toyota Aygo'\n    +'Suzuki Swift'\n\n    at Context.eval (http://qalab.pl.tivixlabs.com/__cypress/tests?p=cypress\\integration\\BDD\\carRent.feature:251:32)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "end-to-end-rent-car-validation;rent-a-car-with-invalid-date-with-respective-country-and-city",
+        "keyword": "Scenario",
+        "line": 51,
+        "name": "Rent a Car with Invalid Date with respective Country and City",
+        "tags": [
+          {
+            "name": "@RentCarWithInvalidDate",
+            "line": 50
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I navigate to Car Rent Page",
+            "result": {
+              "status": "passed",
+              "duration": 1009000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Country",
+                      "City"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Poland",
+                      "Wroclaw"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 52,
+            "name": "I select Country with Valid City",
+            "result": {
+              "status": "passed",
+              "duration": 351000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Days",
+                      "10"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 55,
+            "name": "Enter Invalid Date for Pickup and Drop-off",
+            "result": {
+              "status": "passed",
+              "duration": 612000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 57,
+            "name": "Click on Search button",
+            "result": {
+              "status": "passed",
+              "duration": 941000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 58,
+            "name": "Validate able to see List of Cars",
+            "result": {
+              "status": "passed",
+              "duration": 56000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 59,
+            "name": "Rent First Car Availabe",
+            "result": {
+              "status": "passed",
+              "duration": 786000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Country",
+                      "City"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Poland",
+                      "Wroclaw"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 60,
+            "name": "Validate Car Details with Invalid Dates",
+            "result": {
+              "status": "passed",
+              "duration": 79000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 63,
+            "name": "Click On Rent button",
+            "result": {
+              "status": "passed",
+              "duration": 1050000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Name",
+                      "Jim"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "LastName",
+                      "Joe"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Card Number",
+                      "987456"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Email Id",
+                      "jim@gmail.com"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 64,
+            "name": "Enter The Personal Details to Rent a Car",
+            "result": {
+              "status": "passed",
+              "duration": 1059000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 69,
+            "name": "Click on Rent button to Confirm",
+            "result": {
+              "status": "passed",
+              "duration": 690000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
